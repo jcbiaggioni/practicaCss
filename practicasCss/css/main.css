@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    height: 600px;
+    background: url("../img/pr12.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0);
+}
+
+.textos-header {
+    text-align: center;
+}
+
+.textos-header p {
+    font-size: 22px;
+    margin-bottom: 80px;
+}
+
+h1 {
+    font-size: 58px;
+}
+
+.textos-header a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    background-color: rgba(139, 243, 208, 0.473);
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.textos-header a:hover {
+    background-color: rgb(115, 212, 180);
+    transition: 0.3s ease-in-out;
+}
+
+.presentacion {
+    width: 100%;
+    min-height: 300px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.contenedor {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h3 {
+    font-weight: 500;
+    margin: 40px auto;
+}
+
+#gafas {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.presentacion p {
+    font-weight: 300;
+    line-height: 160%;
+}
+
+.nosotros {
+    width: 100%;
+    min-height: 300px;
+    text-align: center;
+    background: rgb(171, 233, 238);
+    margin-bottom: 40px;
+}
+
+.nosotros h3 {
+    display: inline-block;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+.sobre-nos {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.sobre-nos article {
+    width: 30%;
+    min-height: 300px;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.473);
+    transform: scale(1);
+    transition: transform 0.9s;
+    margin: 10px;
+}
+
+.sobre-nos article:hover {
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.473);
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+article h4 {
+    margin: 15px 0;
+}
+
+article i {
+    font-size: 60px;
+    background-color: rgb(115, 212, 180);
+    border-radius: 50%;
+    margin: 10px 0;
+    padding: 10px;
+    color: white;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+    margin-top: 40px;
+}
+
+.info-imagen {
+    width: 48%;
+}
+
+.info-imagen img {
+    width: 80%;
+    height: 80%;
+    box-shadow: 0 0 8px 0 rgb(0, 0, 0);
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+
+.info-imagen img:hover {
+    transform: scale(1.05);
+}
+
+.info-textos {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-textos h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.info-productos {
+    height: 100px;
+    background-color: black;
+}
+
+.info-productos h2 {
+    color: #1ec9ba;
+    font-size: 38px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.productos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.productos img {
+    width: 300px;
+    height: 250px;
+}
+
+footer {
+    margin-top: 80px;
+    background: rgb(96, 189, 196);
+    color: #fff;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input {
+    background: transparent;
+    border: 0;
+    color: #fff;
+    outline: none;
+    border: 1px solid #fff;
+    padding: 20px 10px;
+}
+
+.input::placeholder {
+    color: #fff;
+    font-family: 'raleway', 'sans-serif';
+}
+
+.input[type="text"],
+.input[type="email"] {
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 30px;
+}
+
+.form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    width: 120px;
+    text-align: center;
+    padding: 14px 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #729ce0f5;
+}
+
+@media screen and (max-width:800px) {
+    .sobre-nos article {
+        width: 90%;
+    }
+    .info-imagen {
+        width: 700px;
+        height: 300px;
+    }
+    .info-imagen img {
+        width: 100%;
+    }
+    .info-textos {
+        width: 98%;
+        text-align: center;
+    }
+    .info-productos {
+        margin-bottom: 10px;
+    }
+    .info-productos h2 {
+        font-size: 30px;
+    }
+}

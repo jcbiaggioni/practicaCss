@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUN GLASSES | HOME</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6de0fb50cb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Jquery/jquery.fancybox.css">
+    <script src="jquery/jquery-3.5.0.js"></script>
+    <script src="Jquery/jquery.fancybox.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('header').hide();
+            $('header').fadeIn(3000);
+
+            $('#products article a').fancybox({
+                overlayColor: "aquamarine",
+                overlayOpacity: .6,
+                transitionIn: "elastic",
+                transitionOut: "elastic",
+                titlePosition: "Outside",
+                cyclic: true,
+                animationEffect: "zoom-in-out",
+
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <div class="textos-header" id="textos-head">
+            <h1> SUN <strong>GLASSES</strong> </h1>
+            <p>Los mejores anteojos del mercado</p>
+            <a href="#products">Ver Nuestros Productos</a>
+        </div>
+
+    </header>
+    <section class="presentacion">
+        <div class="contenedor">
+            <h3>Somos especialistas en fabricar los mejores anteojos para las mejores personas</h3>
+            <p><i id="gafas" class="fas fa-glasses"></i></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur autem et neque, velit impedit reiciendis! Maiores animi consectetur quibusdam reprehenderit soluta fuga delectus aut, quidem deleniti explicabo possimus sequi? Minima eaque
+                iure nihil accusamus provident ut reiciendis sint, ipsa reprehenderit earum mollitia debitis! Accusamus deleniti dolor veniam tenetur deserunt sed.</p>
+        </div>
+
+    </section>
+    <section class="nosotros">
+        <div class="contenedor">
+            <h3>Nos diferenciamos del resto aportando</h3>
+            <p><i id="gafas" class="fas fa-glasses"></i></p>
+            <div class="sobre-nos">
+                <article>
+                    <i class="fab fa-angrycreative"></i>
+                    <h4>Creatividad e Innovación.</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptatibus, dicta quasi incidunt recusandae dolore illo sed quibusdam error distinctio?</p>
+                </article>
+                <article>
+                    <i class="fas fa-leaf"></i>
+                    <h4>Materiales ecológicos</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptatibus, dicta quasi incidunt recusandae dolore illo sed quibusdam error distinctio?</p>
+                </article>
+                <article>
+                    <i class="far fa-smile"></i>
+                    <h4>Felicidad en consumidores</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptatibus, dicta quasi incidunt recusandae dolore illo sed quibusdam error distinctio?</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="info">
+        <div class="info-imagen">
+            <img src="img/img1.jpg" alt="">
+        </div>
+        <div class="info-textos contenedor">
+            <h4>Lorem ipsum dolor sit amet.</h4>
+            <p><i id="gafas" class="fas fa-glasses"></i></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt saepe accusamus magni maxime qui animi exercitationem necessitatibus earum eaque quas.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consectetur temporibus sunt nemo iusto voluptatum.</p>
+        </div>
+    </section>
+    <section class="info-productos">
+        <h2>Nuestros Productos</h2>
+    </section>
+    <section class="productos" id="products">
+
+        <article>
+            <a href="img/pr1.jpg" rel="gallery"><img src="img/pr1.jpg" alt=""></a>
+        </article>
+        <article>
+            <a href="img/pr2.jpg" rel="gallery"><img src="img/pr2.jpg" alt=""></a>
+        </article>
+        <article>
+            <a href="img/pr3.jpg" rel="gallery"><img src="img/pr3.jpg" alt=""></a>
+        </article>
+        <article>
+            <a href="img/pr4.jpg" rel="gallery"><img src="img/pr4.jpg" alt=""></a>
+        </article>
+        <article>
+            <a href="img/pr5.jpg" rel="gallery"><img src="img/pr5.jpg" alt=""></a>
+        </article>
+        <article>
+            <a href="img/pr6.jpg" rel="gallery"><img src="img/pr6.jpg" alt=""></a>
+        </article>
+        <article>
+            <a href="img/pr7.jpg" rel="gallery"><img src="img/pr7.jpg" alt=""></a>
+        </article>
+        <article>
+            <a href="img/pr8.jpg" rel="gallery"><img src="img/pr8.jpg" alt=""></a>
+        </article>
+        <article>
+            <a href="img/pr9.jpg" rel="gallery"><img src="img/pr9.jpg" alt=""></a>
+        </article>
+        <article>
+            <a href="img/pr10.jpg" rel="gallery"><img src="img/pr10.jpg" alt=""></a>
+        </article>
+
+    </section>
+    <footer id="contacto">
+        <div class="contenedor">
+            <h2 class="titulo">Contact Us</h2>
+            <form action="" class="form">
+                <input class="input" type="text" placeholder="Nombre">
+                <input class="input" type="email" name="" id="" placeholder="Email">
+                <textarea class="input" name="" id="" cols="30" rows="10" placeholder="Mensaje..."></textarea>
+                <input class="input" type="submit" value="Enviar">
+            </form>
+        </div>
+    </footer>
+
+</body>
+
+</html>
